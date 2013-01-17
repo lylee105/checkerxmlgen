@@ -11,11 +11,11 @@ namespace CheckerXmlGenerator
 {
     public partial class PopupWindow : Form
     {
-        TreeView checker = null;
+        TreeView tree = null;
         public PopupWindow(TreeView gen)
         {
             InitializeComponent();
-            this.checker = gen;
+            this.tree = gen;
         }
 
         private void AddBut_Click(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace CheckerXmlGenerator
                     tn.Nodes.Add(refLink);
                 }
             }
-            checker.Nodes.Add(node);
+            tree.Nodes.Add(node);
 
             this.Dispose();
             this.Close();

@@ -11,14 +11,11 @@ namespace CheckerXmlGenerator
 {
     public partial class ViewForm : Form
     {
-        CheckerXmlGenerator checker = null;
-
         public ViewForm(CheckerXmlGenerator gen)
         {
             InitializeComponent();
-            this.checker = gen;
-            checker.
-            refTreeView
+            SetTree(gen.getTreeData());
+            
         }
 
         private void generateBut_Click(object sender, EventArgs e)
@@ -26,5 +23,28 @@ namespace CheckerXmlGenerator
           
         }
 
+        private void SetTree(TreeView tr)
+        {
+            refTreeView.Nodes.Clear();
+            foreach (TreeNode originalNode in tr.Nodes)
+            {
+                TreeNode newNode = new TreeNode(originalNode.Text);
+                newNode.Tag = originalNode.Tag;
+                refTreeView.Nodes.Add(newNode);
+                IterateTreeNodes(originalNode, newNode);
+            }
+        }
+
+        private void IterateTreeNodes(TreeNode originNode, TreeNode rootNode)
+        {
+            foreach (TreeNode childNode in originNode.Nodes)
+            {
+                TreeNode newNode = new TreeNode(childNode.Text);
+                newNode.Tag = childNode.Tag;
+                refTreeView.SelectedNode = rootNode;
+                refTreeView.SelectedNode.Nodes.Add(newNode);
+                IterateTreeNodes(childNode, newNode);
+            }
+        }
     }
 }

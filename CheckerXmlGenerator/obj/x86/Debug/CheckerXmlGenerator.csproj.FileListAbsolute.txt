@@ -11,3 +11,4 @@ C:\Users\Byungho\documents\visual studio 2010\Projects\CheckerXmlGenerator\Check
 C:\Users\Byungho\documents\visual studio 2010\Projects\CheckerXmlGenerator\CheckerXmlGenerator\obj\x86\Debug\CheckerXmlGenerator.application
 C:\Users\Byungho\documents\visual studio 2010\Projects\CheckerXmlGenerator\CheckerXmlGenerator\obj\x86\Debug\CheckerXmlGenerator.CheckerXmlGenerator.resources
 C:\Users\Byungho\documents\visual studio 2010\Projects\CheckerXmlGenerator\CheckerXmlGenerator\obj\x86\Debug\CheckerXmlGenerator.PopupWindow.resources
+C:\Users\Byungho\documents\visual studio 2010\Projects\CheckerXmlGenerator\CheckerXmlGenerator\obj\x86\Debug\CheckerXmlGenerator.ViewForm.resources

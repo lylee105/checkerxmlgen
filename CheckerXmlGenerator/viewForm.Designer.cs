@@ -80,7 +80,7 @@
             this.refTreeView.Name = "refTreeView";
             this.refTreeView.Size = new System.Drawing.Size(282, 97);
             this.refTreeView.TabIndex = 53;
-            this.refTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.refTreeView_AfterSelect);
+            
             // 
             // label8
             // 

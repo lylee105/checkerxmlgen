@@ -13,22 +13,12 @@ namespace CheckerXmlGenerator
     {
         PopupWindow popup = null;
         TreeView refTree = null;
+        ViewForm view = null;
 
         public CheckerXmlGenerator()
         {
             InitializeComponent();
-            this.refTree = new TreeView();
-        }
-
-        private void ViewBut_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void refCreateBut_Click(object sender, EventArgs e)
-        {
-            popup = new PopupWindow();
-            popup.Show();
+            refTree = new TreeView();
         }
 
         private void setData()
@@ -36,9 +26,21 @@ namespace CheckerXmlGenerator
 
         }
 
-        public void getData()
+        public TreeView getTreeData()
         {
+            return this.refTree;
+        }
 
+        private void refCreateBut_Click(object sender, EventArgs e)
+        {
+            popup = new PopupWindow(this.refTree);
+            popup.Show();
+        }
+
+        private void viewBut_Click(object sender, EventArgs e)
+        {
+            view = new ViewForm(this);
+            view.Show();
         }
    }
 }

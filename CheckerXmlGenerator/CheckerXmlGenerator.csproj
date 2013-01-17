@@ -80,6 +80,12 @@
     <Compile Include="CheckerXmlGenerator.Designer.cs">
       <DependentUpon>CheckerXmlGenerator.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewForm.Designer.cs">
+      <DependentUpon>viewForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PopupWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CheckerXmlGenerator.resx">
       <DependentUpon>CheckerXmlGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewForm.resx">
+      <DependentUpon>viewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PopupWindow.resx">
       <DependentUpon>PopupWindow.cs</DependentUpon>
