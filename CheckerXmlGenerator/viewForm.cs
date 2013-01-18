@@ -15,12 +15,24 @@ namespace CheckerXmlGenerator
         {
             InitializeComponent();
             SetTree(gen.getTreeData());
-            
+            SetTable(gen.getExamData());
         }
 
         private void generateBut_Click(object sender, EventArgs e)
         {
           
+        }
+
+        private void SetTable(string[] str)
+        {
+            int i = 0;
+            foreach (string line in str)
+            {
+                examDataGridView.Rows.Add(line);
+                //examDataGridView["context", i].Value = line;
+                i++;
+            }
+            
         }
 
         private void SetTree(TreeView tr)

@@ -21,9 +21,11 @@ namespace CheckerXmlGenerator
             refTree = new TreeView();
         }
 
-        private void setData()
+        public string[] getExamData()
         {
+            string[] examData = examTextBox.Text.Split('\n');
 
+            return examData;
         }
 
         public TreeView getTreeData()

@@ -76,6 +76,7 @@
             this.refLink});
             this.dataGridView.Location = new System.Drawing.Point(29, 101);
             this.dataGridView.Name = "dataGridView";
+            this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.RowTemplate.Height = 23;
             this.dataGridView.Size = new System.Drawing.Size(409, 150);
             this.dataGridView.TabIndex = 38;

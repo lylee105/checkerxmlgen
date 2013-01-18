@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.examDataGridView = new System.Windows.Forms.DataGridView();
             this.lineNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.context = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.refTreeView = new System.Windows.Forms.TreeView();
@@ -38,28 +38,29 @@
             this.button9 = new System.Windows.Forms.Button();
             this.levelViewBox = new System.Windows.Forms.TextBox();
             this.checkerViewBox = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.solDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.generateBut = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.examDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // examDataGridView
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.examDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.examDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.lineNum,
             this.context});
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 217);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(716, 204);
-            this.dataGridView1.TabIndex = 54;
+            this.examDataGridView.EnableHeadersVisualStyles = false;
+            this.examDataGridView.Location = new System.Drawing.Point(14, 217);
+            this.examDataGridView.Name = "examDataGridView";
+            this.examDataGridView.ReadOnly = true;
+            this.examDataGridView.RowHeadersVisible = false;
+            this.examDataGridView.RowTemplate.Height = 23;
+            this.examDataGridView.Size = new System.Drawing.Size(716, 204);
+            this.examDataGridView.TabIndex = 54;
+            
             // 
             // lineNum
             // 
@@ -80,7 +81,6 @@
             this.refTreeView.Name = "refTreeView";
             this.refTreeView.Size = new System.Drawing.Size(282, 97);
             this.refTreeView.TabIndex = 53;
-            
             // 
             // label8
             // 
@@ -132,20 +132,20 @@
             this.checkerViewBox.Size = new System.Drawing.Size(243, 21);
             this.checkerViewBox.TabIndex = 47;
             // 
-            // dataGridView2
+            // solDataGridView
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.solDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.solDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
-            this.dataGridView2.EnableHeadersVisualStyles = false;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 456);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(715, 204);
-            this.dataGridView2.TabIndex = 55;
+            this.solDataGridView.EnableHeadersVisualStyles = false;
+            this.solDataGridView.Location = new System.Drawing.Point(15, 456);
+            this.solDataGridView.Name = "solDataGridView";
+            this.solDataGridView.ReadOnly = true;
+            this.solDataGridView.RowHeadersVisible = false;
+            this.solDataGridView.RowTemplate.Height = 23;
+            this.solDataGridView.Size = new System.Drawing.Size(715, 204);
+            this.solDataGridView.TabIndex = 55;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -176,8 +176,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 730);
             this.Controls.Add(this.generateBut);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.solDataGridView);
+            this.Controls.Add(this.examDataGridView);
             this.Controls.Add(this.refTreeView);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
@@ -187,8 +187,8 @@
             this.Controls.Add(this.checkerViewBox);
             this.Name = "ViewForm";
             this.Text = "View";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.examDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,7 +196,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView examDataGridView;
         private System.Windows.Forms.TreeView refTreeView;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -206,7 +206,7 @@
         private System.Windows.Forms.TextBox checkerViewBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn lineNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn context;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView solDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.Button generateBut;
